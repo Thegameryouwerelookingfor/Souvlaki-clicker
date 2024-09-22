@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Souvlaki Clicker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left section with souvlaki representation -->
+        <div class="left-section">
+            <div class="souvlaki-representation" onclick="souvlakiClick()">
+                <img id="souvlakiImage" src="souvlaki.webp" alt="Souvlaki" width="2000"> <!-- Increased size -->
+            </div>
+            <h2>Souvlakis: <span id="souvlakiCount">0</span></h2>
+        </div>
+
+        <!-- Right section with upgrades -->
+        <div class="right-section">
+            <h3>Upgrades</h3>
+            <div class="upgrade-section">
+                <div id="clickUpgrades" class="scrollable">
+                    <button id="buyUpgrade1" class="upgrade-button tomato">🥗 Times 2 Click Power (Cost: 50 Souvlakis)</button>
+                    <button id="buyUpgrade2" class="upgrade-button tzatziki">🍅 Times 3 Click Power (Cost: 100 Souvlakis)</button>
+                    <button id="buyUpgrade3" class="upgrade-button cucumber">🥒 Times 4 Click Power (Cost: 200 Souvlakis)</button>
+                    <button id="buyUpgrade4" class="upgrade-button garlic">🧄 Times 5 Click Power (Cost: 400 Souvlakis)</button>
+                    <button id="buyUpgrade5" class="upgrade-button plate">🍽 Times 6 Click Power (Cost: 800 Souvlakis)</button>
+                    <button id="buyUpgrade6" class="upgrade-button wrap">🥙 Times 7 Click Power (Cost: 1600 Souvlakis)</button>
+                    <button id="buyUpgrade7" class="upgrade-button pepper">🌶 Times 8 Click Power (Cost: 3200 Souvlakis)</button>
+                    <button id="buyUpgrade8" class="upgrade-button salt">🧂 Times 9 Click Power (Cost: 6400 Souvlakis)</button>
+                    <button id="buyUpgrade9" class="upgrade-button lemon">🍋 Times 10 Click Power (Cost: 12800 Souvlakis)</button>
+                    <button id="buyUpgrade10" class="upgrade-button ultimate">🎉 Ultimate Click Power (Cost: 25600 Souvlakis)</button>
+                </div>
+            </div>
+
+            <h3>Auto-clickers</h3>
+            <div class="upgrade-section">
+                <div id="autoclickers" class="scrollable">
+                    <button id="buyTomato" class="upgrade-button tomato">🍅 Buy Tomato (Cost: 100 Souvlakis)</button>
+                    <button id="buyTzatziki" class="upgrade-button tzatziki">🥒 Buy Tzatziki (Cost: 200 Souvlakis)</button>
+                    <button id="buyOnion" class="upgrade-button onion">🧅 Buy Onion (Cost: 400 Souvlakis)</button>
+                    <button id="buyPepper" class="upgrade-button pepper">🌶 Buy Pepper (Cost: 800 Souvlakis)</button>
+                </div>
+            </div>
+
+            <h3>Watch Ad for Rewards</h3>
+            <button id="watchAdButton" class="upgrade-button ad-button">Watch Ad for Double Souvlakis for 1 Minute</button>
+        </div>
+    </div>
+
+    <audio id="clickSound" src="click.mp3"></audio>
+    <audio id="upgradeSound" src="upgrade.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
